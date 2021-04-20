@@ -12,4 +12,4 @@ eureka:
 
 microservice-assure:
     ribbon:
-        listOfServers: localhost:9010,localhost:9014
+        listOfServers: http://localhost:9010,http://localhost:9014
