@@ -1,0 +1,14 @@
+server:
+    port: 9999
+spring:
+    datasource:
+        password: pwd
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/previt_db?serverTimezone=Europe/Paris&zeroDateTimeBehavior=CONVERT_TO_NULL
+        username: slo
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+urbanisation-si:
+    clairprev:
+        limiteNombreAssure: 3
