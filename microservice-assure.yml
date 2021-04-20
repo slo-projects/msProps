@@ -12,3 +12,8 @@ spring:
 urbanisation-si:
     clairprev:
         limiteNombreAssure: 3
+        
+eureka:
+    client:
+        service-url:
+            defaultZone: http://localhost:9001/eureka/
