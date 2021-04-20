@@ -10,6 +10,6 @@ eureka:
             
 # -- Configure for Ribbon:
 
-microservice-clientui:
+microservice-assure:
     ribbon:
         listOfServers: localhost:9010,localhost:9014
