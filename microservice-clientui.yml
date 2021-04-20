@@ -2,6 +2,14 @@ server:
     port: 9995
  
 eureka:
-    client:
+    client:    
         serviceUrl:
             defaultZone: http://localhost:9001/eureka/
+        fetchRegistry: true
+            
+            
+# -- Configure for Ribbon:
+
+microservice-clientui:
+    ribbon:
+        listOfServers: http://localhost:9010,http://localhost:9014
