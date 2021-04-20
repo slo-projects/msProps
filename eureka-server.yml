@@ -1,0 +1,10 @@
+eureka:
+    client:
+        fetchRegistry: false
+        registerWithEureka: false
+        service-url:
+            defaultZone: http://localhost:9001/eureka/
+    server:
+        enableSelfPreservation: 'false  '
+server:
+    port: 9001
