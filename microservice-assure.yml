@@ -18,7 +18,7 @@ eureka:
       appname: microservice-assure
     client:
         serviceUrl:
-            defaultZone: http://eureka.local:9001/eureka/
+            defaultZone: http://localhost:9001/eureka/
         fetchRegistry: true
         registerWithEureka: true
 
@@ -33,7 +33,7 @@ eureka:
   client:   
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka.local:9001/eureka  
+      defaultZone: http://localhost:9001/eureka  
 server:
   port: 8001   
      
@@ -46,7 +46,7 @@ eureka:
   client:   
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka.local:9001/eureka    
+      defaultZone: http://localhost:9001/eureka    
 server:
   port: 8002
   
@@ -59,7 +59,7 @@ eureka:
   client:   
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka.local:9001/eureka    
+      defaultZone: http://localhost:9001/eureka    
 server:
   port: 8003
   
@@ -72,7 +72,7 @@ eureka:
   client:   
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka.local:9001/eureka    
+      defaultZone: http://localhost:9001/eureka    
 server:
   port: 8004  
   
@@ -85,6 +85,6 @@ eureka:
   client:   
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka.local:9001/eureka    
+      defaultZone: http://localhost:9001/eureka    
 server:
   port: 8005
