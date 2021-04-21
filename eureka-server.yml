@@ -13,11 +13,4 @@ server:
     
 spring:
   profiles: default
-  
-           
-# -- Configure for Ribbon:
-
-microservice-assure:
-    ribbon:
-        listOfServers: localhost:8000,localhost:8001,localhost:8002,localhost:8003,localhost:8004,localhost:8005
-  
+ 
