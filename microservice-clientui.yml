@@ -20,7 +20,7 @@ microservice-assure:
     ribbon:
         eureka:
           enabled: false
-        listOfServers: localhost:8001,localhost:8002,localhost:8003,localhost:8004,localhost:8005
+        listOfServers: localhost:8000,localhost:8001,localhost:8002,localhost:8003,localhost:8004,localhost:8005
         ServerListRefreshInterval: 5000
   
  
