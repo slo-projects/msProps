@@ -1,7 +1,5 @@
 microservice-produit:
     limiteNombreProduit: 3
-server:
-    port: 6000
 spring:
     datasource:
         password: pwd
