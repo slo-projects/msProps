@@ -4,7 +4,9 @@ server:
 eureka:
     instance:
         appname: eureka-server
-    client:    
+        hostname: localhost
+    client:
+        registerWithEureka: false    
         serviceUrl:
             defaultZone: http://localhost:9001/eureka/
         fetchRegistry: true
@@ -14,4 +16,4 @@ eureka:
 
 microservice-assure:
     ribbon:
-        listOfServers: http://localhost:9010,http://localhost:9014
+        listOfServers: localhost:9010,localhost:9014
