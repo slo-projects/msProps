@@ -1,12 +1,14 @@
 server:
     port: 9995
- 
+
 eureka:
+    instance:
+        appname: eureka-server
     client:    
         serviceUrl:
             defaultZone: http://localhost:9001/eureka/
         fetchRegistry: true
-            
+          
             
 # -- Configure for Ribbon:
 
