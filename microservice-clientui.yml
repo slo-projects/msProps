@@ -6,7 +6,7 @@ eureka:
         appname: eureka-server
         hostname: localhost
     client:
-        registerWithEureka: false    
+        registerWithEureka: true    
         serviceUrl:
             defaultZone: http://localhost:9001/eureka/
         fetchRegistry: true
