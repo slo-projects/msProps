@@ -1,5 +1,5 @@
 server:
-    port: 9999
+    port: 8000
 spring:
     datasource:
         password: pwd
@@ -14,8 +14,77 @@ urbanisation-si:
         limiteNombreAssure: 3
         
 eureka:
+    instance:
+      appname: microservice-assure
     client:
         serviceUrl:
-            defaultZone: http://localhost:9001/eureka/
+            defaultZone: http://eureka.local:9001/eureka/
         fetchRegistry: true
-        registerWithEureka: true   
+        registerWithEureka: true
+
+
+
+---
+spring:
+  profiles: microservice-assure01
+eureka:
+  instance:
+    appname: microservice-assure  # ==> This is a instance of ABC-SERVICE
+  client:   
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka.local:9001/eureka  
+server:
+  port: 8001   
+     
+---
+spring:
+  profiles: microservice-assure02
+eureka:
+  instance:
+    appname: microservice-assure  # ==> This is a instance of ABC-SERVICE
+  client:   
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka.local:9001/eureka    
+server:
+  port: 8002
+  
+---
+spring:
+  profiles: microservice-assure03
+eureka:
+  instance:
+    appname: microservice-assure  # ==> This is a instance of ABC-SERVICE
+  client:   
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka.local:9001/eureka    
+server:
+  port: 8003
+  
+---
+spring:
+  profiles: microservice-assure04
+eureka:
+  instance:
+    appname: microservice-assure  # ==> This is a instance of ABC-SERVICE
+  client:   
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka.local:9001/eureka    
+server:
+  port: 8004  
+  
+---
+spring:
+  profiles: microservice-assure05
+eureka:
+  instance:
+    appname: microservice-assure  # ==> This is a instance of ABC-SERVICE
+  client:   
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka.local:9001/eureka    
+server:
+  port: 8005
